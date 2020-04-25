@@ -11,14 +11,14 @@ char img[50];
    {
       for(j=0;j<NB_FRAMES;j++)
       {
-         if(i==0)   snprintf (img, sizeof img,"/home/mahdi/travaille/pd/Idle__00%d.png",j);
-         else if (i==1)   snprintf (img, sizeof img,"/home/mahdi/travaille/pd/Run__00%d.png",j);
-         else if (i==2)   snprintf (img, sizeof img,"/home/mahdi/travaille/pg/RunL__00%d.png",j);
-         else if (i==3)   snprintf (img, sizeof img,"/home/mahdi/travaille/pd/Jump__00%d.png",j);
-         else if (i==4)   snprintf (img, sizeof img,"/home/mahdi/travaille/pd/Slide__00%d.png",j);
-         else if (i==5)   snprintf (img, sizeof img,"/home/mahdi/travaille/pg/Jump__00%d.png",j);
-	 else if (i==6)   snprintf (img, sizeof img,"/home/mahdi/travaille/pg/Slide__00%d.png",j);
-	 else if (i==7)   snprintf (img, sizeof img,"/home/mahdi/travaille/pg/Idle__00%d.png",j);
+         if(i==0)   snprintf (img, sizeof img,"/home/mahdi/titi/pd/Idle__00%d.png",j);
+         else if (i==1)   snprintf (img, sizeof img,"/home/mahdi/titi/pd/Run__00%d.png",j);
+         else if (i==2)   snprintf (img, sizeof img,"/home/mahdi/titi/pg/RunL__00%d.png",j);
+         else if (i==3)   snprintf (img, sizeof img,"/home/mahdi/titi/pd/Jump__00%d.png",j);
+         else if (i==4)   snprintf (img, sizeof img,"/home/mahdi/titi/pd/Slide__00%d.png",j);
+         else if (i==5)   snprintf (img, sizeof img,"/home/mahdi/titi/pg/Jump__00%d.png",j);
+	 else if (i==6)   snprintf (img, sizeof img,"/home/mahdi/titi/pg/Slide__00%d.png",j);
+	 else if (i==7)   snprintf (img, sizeof img,"/home/mahdi/titi/pg/Idle__00%d.png",j);
 	printf("nom=%s\n",img);
       Perso->p[i][j]=IMG_Load(img);
    

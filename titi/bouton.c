@@ -10,9 +10,9 @@ p[1].NbrBoutons=3;
 p[2].NbrBoutons=5;
 
 //init page 0
- snprintf (img, sizeof img, "/home/mahdi/jeu/b/%d.png",k);
+ snprintf (img, sizeof img, "/home/mahdi/titi/b/%d.png",k);
    p[0].b[0].t[0]=IMG_Load(img);
-   snprintf (img, sizeof img, "/home/mahdi/jeu/b/%d.png",k+1);
+   snprintf (img, sizeof img, "/home/mahdi/titi/b/%d.png",k+1);
    p[0].b[0].t[1]=IMG_Load(img);
    p[0].b[0].existe=1;
    p[0].b[0].etat=0;
@@ -24,9 +24,9 @@ p[2].NbrBoutons=5;
 //init boutons page0
    for(j=1;j<p[0].NbrBoutons;j++)
    {
-      snprintf (img, sizeof img, "/home/mahdi/jeu/b/%d.png",k);
+      snprintf (img, sizeof img, "/home/mahdi/titi/b/%d.png",k);
       p[0].b[j].t[0]=IMG_Load(img);
-      snprintf (img, sizeof img, "/home/mahdi/jeu/b/%d.png",k+1);
+      snprintf (img, sizeof img, "/home/mahdi/titi/b/%d.png",k+1);
       p[0].b[j].t[1]=IMG_Load(img);
       p[0].b[j].etat=0;
       p[0].b[j].existe=1;
@@ -45,9 +45,9 @@ for(i=1;i<Nbr_Pages;i++)
 {
 //init bouton n1
 printf("heyyy3\n");
-   snprintf (img, sizeof img, "/home/mahdi/jeu/b/%d.png",k);
+   snprintf (img, sizeof img, "/home/mahdi/titi/b/%d.png",k);
    p[i].b[0].t[0]=IMG_Load(img);
-   snprintf (img, sizeof img, "/home/mahdi/jeu/b/%d.png",k+1);
+   snprintf (img, sizeof img, "/home/mahdi/titi/b/%d.png",k+1);
    p[i].b[0].t[1]=IMG_Load(img);
    p[i].b[0].existe=1;
    p[i].b[0].etat=0;
@@ -61,10 +61,10 @@ printf("heyyy4\n");
 
    for(j=1;j<p[i].NbrBoutons-1;j++)
    {
-      snprintf (img, sizeof img, "/home/mahdi/jeu/b/%d.png",k);
+      snprintf (img, sizeof img, "/home/mahdi/titi/b/%d.png",k);
       p[i].b[j].t[0]=IMG_Load(img);
 	printf("%d %s\n",i,img);
-      snprintf (img, sizeof img, "/home/mahdi/jeu/b/%d.png",k+1);
+      snprintf (img, sizeof img, "/home/mahdi/titi/b/%d.png",k+1);
       p[i].b[j].t[1]=IMG_Load(img);
       printf("%s\n",img);
       p[i].b[j].etat=0;
@@ -76,8 +76,8 @@ printf("heyyy4\n");
       k+=2;
    }
 //bouton back
-   p[i].b[j].t[0]=IMG_Load("/home/mahdi/jeu/b/back.png");
-   p[i].b[j].t[1]=IMG_Load("/home/mahdi/jeu/b/fback.png");
+   p[i].b[j].t[0]=IMG_Load("/home/mahdi/titi/b/back.png");
+   p[i].b[j].t[1]=IMG_Load("/home/mahdi/titi/b/fback.png");
    p[i].b[j].etat=0;
    p[i].b[j].existe=1;
    p[i].b[j].PosBouton[0].x=34;
